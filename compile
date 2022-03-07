@@ -1,0 +1,7 @@
+#!/bin/bash
+
+F90="ifort -O3 -xHost -qopenmp"
+SRC="routines.f90 main.f90"
+
+$F90 $OPT $SRC -o corr.x
+

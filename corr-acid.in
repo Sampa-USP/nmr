@@ -1,0 +1,5 @@
+tsim 10000
+dt   50
+twin 100
+dumpfile dump-acid-cut.lammpstrj
+outfile  corr-acid.out
