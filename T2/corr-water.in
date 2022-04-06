@@ -1,0 +1,5 @@
+tsim 20000
+dt   100
+twin 200
+dumpfile bulk_water.lammpstrj
+outfile  corr-water.out

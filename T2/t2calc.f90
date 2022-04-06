@@ -7,9 +7,9 @@ double precision  :: convG0, convtau
 double precision  :: invT2R,T2R,invT2T,T2T,invT2,T2,T2tmp
 character(LEN=50) :: inputfile(3),outputfile
 
-call getarg(1,inputfile(1))
-call getarg(2,inputfile(2))
-call getarg(3,inputfile(3))
+call getarg(1,inputfile(1)) !G0
+call getarg(2,inputfile(2)) !tauR
+call getarg(3,inputfile(3)) !tauT
 call getarg(4,outputfile)
 
 convG0=1.06679D11

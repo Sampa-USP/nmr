@@ -1,0 +1,17 @@
+#!/bin/bash
+
+F90="gfortran" #"ifort -g -check all -fpe0 -warn -traceback -debug extended"
+#F90="ifort -traceback -O3 -xHost"
+SRC="routines.f90 main.f90"
+
+
+#OPT="-Ofast -fopenmp -march=x86-64"
+#OPT="-m32 -mfpmath=sse -Ofast -flto -march=x86-64 -funroll-loops -fopenmp"
+
+#OPT=" -Ofast -flto -march=x86-64 -funroll-loops -fopenmp"
+
+#OPT=" -Ofast -flto -march=x86-64 -funroll-loops -fopenmp  -ftree-loop-distribution"
+
+$F90 $OPT $SRC -o corr.x
+
+
